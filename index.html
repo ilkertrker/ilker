@@ -9,28 +9,66 @@
     <meta name="description" content = "Bu bir e-ticaret sitesidir" />
     <meta name="keyword" content = "Yemek , Paket" />
     <meta name="robot" content="all" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="CSS_files/cart.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="Plugins/slick-master/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="Plugins/slick-master/slick/slick-theme.css"/>
+    <script type="text/javascript" src="Plugins/slick-master/slick/slick.min.js"></script>
+    <script src="Js_files/ecommerce.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
   </head>
 <body>
   <header>
-    <nav id="header-nav" class="navbar navbar-default">
+    <nav class="navbar navbar-light bg-light">
       <div class="container">
-        <div class="navbar-header">
-          <a href="index.html" class="pull-left visible-md visible-lg">
-            <div id="logo-img" ><img src="images/restaurant-logo_medium.png" alt="logo" width="100px"></div>
-          </a>
+        <a class="navbar-brand" href="#">
+          <img src="images/Kurulus_1967.jpg" alt="" width="50px" >
+        </a>
+      </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><h1>Lokanta</h1></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Anasayfa
+                <span class="glyphicon glyphicon-log-in"></span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about-us.html">Hakkımızda
+                <span class="glyphicon glyphicon-info-sign"></span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="menu-categories.html">Menü
+                <span class="glyphicon glyphicon-cutlery"></span>
+              </a>
+            </li>
+            
+          </ul>
+          <div>
+          <form class="d-flex pull-right">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+        </div>
+      </div>
+    </nav>
+    
+    
+          
 
-          <div class="navbar-brand">
-            <a href="index.html"><h1>yemekler paket servis</h1></a> 
-            <p class="visible-lg" >
-              <img src="images/pngegg.png" alt="sertifika" width="25px" >
-              <span >Organik Sertifikalı</span>
-            </p>
-          </div>
+          
           <!--Button bslgıç-->
 
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
@@ -41,33 +79,14 @@
           </button>
         </div>
 
-        <div id="collapsable-nav" class="collapse navbar-collapse">
-           <ul id="nav-list" class="nav navbar-nav navbar-right">
-            <li>
-              <a href="menu-categories.html">
-                <span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs"> Menu</a>
-            </li>
-            <li>
-              <a href="login.html">
-                <span class="glyphicon glyphicon-log-in"></span><br class="hidden-xs"> Giriş</a>
-            </li>
-            <li>
-              <a href="about-us.html">
-                <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> Hakkımızda</a>
-            </li>
-            
-            <li id="phone" class="hidden-xs">
-              <a href="tel:212-555-55-55">
-                <span>212-555-55-55</span></a><div>* Getir de getirelim</div>
-            </li>
-          </ul><!-- #nav-list -->
-        </div><!-- .Buttonlar -->
+        
       </div><!-- .container -->
     </nav><!-- #header-nav -->
   </header>
 
   <!-- Jumbotronlar -->
 
+  <div class="w-100 mx-auto">
   <div class="jumbotron">
     <h1>Lorem ipsum dolor sit amet.</h1>
     <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -77,8 +96,32 @@
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
         Nulla assumenda accusantium amet incidunt distinctio odit maiores quibusdam 
         sint facilis sequi</p>
-        <a href="menu-categories.html" class="btn btn-primary large">Satın al</a>
+        <a href="menu-categories.html" class="btn btn-primary large mx-auto">Satın al</a>
   </div>
+  </div>
+  <div class="w-100 mx-auto">
+
+  <div c style="width: 50%;" id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/background-blurry-restaurant-shop-interior.jpg" class="d-block w-100" alt="">
+      </div>
+      <div class="carousel-item">
+        <img src="images/life-style.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="images/chicken-wings-barbecue-sweetly-sour-sauce-picnic-summer-menu-tasty-food-top-view-flat-lay.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  
+
+  
+
+  
 
 
   <div id="call-btn" class="visible-xs">
@@ -141,5 +184,19 @@ duration:1000,
   <script src="js/jquery-2.1.4.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/script.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+          <script>
+            AOS.init({
+              once:true,
+              duration:1000,
+            });
+          /* const parallax1 =document.getElementById('parallax1');
+          const parallax2 =document.getElementById('parallax2');
+          window.addEventListener("scroll",function(){
+            let offset = window.pageYOffset;
+            parallax1.style.backgroundPositionY = offset * 0.4 + 'px';
+            parallax2.style.backgroundPositionY = offset * 0.9 + 'px';
+          });*/
+        </script>
 </body>
 </html>
